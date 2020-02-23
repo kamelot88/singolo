@@ -155,32 +155,53 @@
 /* Стили для HEADER */
 header {
     background-color: #2d303a;
+    width: 100%;
+    /* height: 89px; */
 }
 header .line {
     background-color: #323746;
 }
 header .content {
+    /* width: 100%; */
     height: 89px;
-    padding: 4px 40px 0 35px;
-    width: calc(100% - 80px);
+    padding: 0px 40px 0 40px;
     font-weight: 700;
-    line-height: 6.32px;
+    /* line-height: 6.32px; */
     color: #ffffff;
 }
 nav {
     width: 371px;
+    margin-top: 18px;
 }
 nav li {
+    /* height: auto; */
     list-style-type: none;
-    font-size: 12px;
+    font-size: 11.5px;
     text-transform: uppercase;
+    vertical-align: ;
+  }
+nav li a {
+  /* text-decoration: none; */
+}
+.block_style {
+  /* display: block; */
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #494e62;
+  z-index: 8;
 }
 .red_text {
     color: #f06c64;;
 }
 .logo {
-    font-size: 25px;
+  font-size: 24px;
+  height: 20px;
+  margin-top: 5px;
+  padding: 0;
+  text-transform: uppercase;
 }
+
 /* Конец стилей для HEADER */
 
 
@@ -189,14 +210,119 @@ main {
     background-color: #f06c64;
 }
 main .content {
-    height: 594px;
+    height: 558px;
+    padding-bottom: 36px;
 }
 main .line {
     background-color: #ea676b;
 }
+.chevLeft {
+  margin-left: 42px;
+}
+.phone1 {
+  width: 215px;
+  height: 458px;
+  margin-left: 54px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  box-shadow:
+  1px 0px rgb(221,93,90), 1px 1px rgb(221,93,90),
+  2px 1px rgb(220,92,89), 2px 2px rgb(220,92,89),
+  3px 2px rgb(219,91,88), 3px 3px rgb(219,91,88),
+  4px 3px rgb(218,90,87), 4px 4px rgb(218,90,87),
+  5px 4px rgb(217,89,86), 5px 5px rgb(217,89,86),
+  6px 5px rgb(216,88,85), 6px 6px rgb(216,88,85),
+  7px 6px rgb(215,87,84), 7px 7px rgb(215,87,84),
+  8px 7px rgb(214,86,83), 8px 8px rgb(214,86,83),
+  9px 8px rgb(213,85,82), 9px 9px rgb(213,85,82),
+  10px 9px rgb(212,84,81), 10px 10px rgb(212,84,81),
+  11px 10px rgb(211,83,80), 11px 11px rgb(211,83,80),
+  12px 11px rgb(210,82,79), 12px 12px rgb(210,82,79),
+  13px 12px rgb(209,81,78), 13px 13px rgb(209,81,78),
+  14px 13px rgb(208,80,77), 14px 14px rgb(208,80,77),
+  15px 14px rgb(207,79,76), 15px 15px rgb(207,79,76),
+  16px 15px rgb(206,78,75), 16px 16px rgb(206,78,75),
+  17px 16px rgb(205,77,74), 17px 17px rgb(205,77,74),
+  18px 17px rgb(204,76,73), 18px 18px rgb(204,76,73),
+  19px 18px rgb(203,75,72), 19px 19px rgb(203,75,72),
+  20px 19px rgb(202,74,71), 20px 20px rgb(202,74,71),
+  21px 20px rgb(201,73,70), 21px 21px rgb(201,73,70),
+  22px 21px rgb(200,72,69), 22px 22px rgb(200,72,69),
+  23px 22px rgb(199,71,68), 23px 23px rgb(199,71,68),
+  24px 23px rgb(198,70,67), 24px 24px rgb(198,70,67),
+  25px 24px rgb(197,69,66), 25px 25px rgb(197,69,66);
+}
+.cam {
 
-
-
+}
+.phone1 .display1 {
+  width: 188px;
+  height: 333px;
+  margin-top: 22px;
+  background: url( assets/bg_phone_1.png);
+  border: 2px solid #c5c5c5;
+}
+.cam {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  background-color: #d8d8d8;
+}
+.cam .infra {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #f06c64;
+}
+.volum {
+  width: 36px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #acacac;
+  margin-top: 10px;
+}
+.home {
+  width: 43px;
+  height: 43px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background-color: #fafafa;
+}
+.home  img {
+  margin: auto;
+}
+.phone2 {
+  width: 458px;
+  height: 215px;
+  margin-left: 98px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #f2f2f2;
+  flex-direction: row-reverse;
+}
+.phone2 .cam {
+  margin-left: 10px;
+}
+.phone2 .volum {
+  margin-left: 22px;
+  width: 5px;
+  height: 36px;
+}
+.phone2 .display2 {
+  width: 333px;
+  height: 188px;
+  margin-left: 7px;
+  background: url( assets/bg_phone_2.png);
+  border: 2px solid #c5c5c5;
+}
+.phone2 .home {
+  margin-left: 8px;
+}
+.chevRight {
+  margin-left: 81px;
+}
 
 
 /* Стили для .services */
