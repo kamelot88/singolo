@@ -171,13 +171,22 @@ header .content {
 }
 nav {
     width: 371px;
-    margin-top: 18px;
+    margin-top: 15px;
 }
 nav li {
     /* height: auto; */
     list-style-type: none;
     font-size: 11.5px;
     text-transform: uppercase;
+}
+nav li a {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 6px;
+  font-weight: 700;
+}
+nav li a:hover {
+  background-color: #70708f;
 }
 .block_style {
   /* display: block; */
@@ -193,7 +202,7 @@ nav li {
 .logo {
   font-size: 24px;
   height: 20px;
-  margin-top: 5px;
+  margin-top: 4px;
   padding: 0;
   text-transform: uppercase;
 }
@@ -213,8 +222,12 @@ main .line {
     background-color: #ea676b;
 }
 .chevLeft {
-  margin-left: 42px;
-  margin-top: 25px;
+  margin-left: 38px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #f06c64;
+  border: none;
+  /* outline: none; */
 }
 .chevLeft img, .chevRight img {
 width: 16px;
@@ -223,42 +236,43 @@ height: 27px;
 .phone1 {
   width: 215px;
   height: 458px;
-  margin-left: 54px;
+  margin-left: 47px;
+  margin-top: 5px;
   border-radius: 25px;
   background-color: #f2f2f2;
   box-shadow:
-  1px 0px rgb(221,93,90), 1px 1px rgb(221,93,90),
-  2px 1px rgb(220,92,89), 2px 2px rgb(220,92,89),
-  3px 2px rgb(219,91,88), 3px 3px rgb(219,91,88),
-  4px 3px rgb(218,90,87), 4px 4px rgb(218,90,87),
-  5px 4px rgb(217,89,86), 5px 5px rgb(217,89,86),
-  6px 5px rgb(216,88,85), 6px 6px rgb(216,88,85),
-  7px 6px rgb(215,87,84), 7px 7px rgb(215,87,84),
-  8px 7px rgb(214,86,83), 8px 8px rgb(214,86,83),
-  9px 8px rgb(213,85,82), 9px 9px rgb(213,85,82),
-  10px 9px rgb(212,84,81), 10px 10px rgb(212,84,81),
-  11px 10px rgb(211,83,80), 11px 11px rgb(211,83,80),
-  12px 11px rgb(210,82,79), 12px 12px rgb(210,82,79),
-  13px 12px rgb(209,81,78), 13px 13px rgb(209,81,78),
-  14px 13px rgb(208,80,77), 14px 14px rgb(208,80,77),
-  15px 14px rgb(207,79,76), 15px 15px rgb(207,79,76),
-  16px 15px rgb(206,78,75), 16px 16px rgb(206,78,75),
-  17px 16px rgb(205,77,74), 17px 17px rgb(205,77,74),
-  18px 17px rgb(204,76,73), 18px 18px rgb(204,76,73),
-  19px 18px rgb(203,75,72), 19px 19px rgb(203,75,72),
-  20px 19px rgb(202,74,71), 20px 20px rgb(202,74,71),
-  21px 20px rgb(201,73,70), 21px 21px rgb(201,73,70),
-  22px 21px rgb(200,72,69), 22px 22px rgb(200,72,69),
-  23px 22px rgb(199,71,68), 23px 23px rgb(199,71,68),
-  24px 23px rgb(198,70,67), 24px 24px rgb(198,70,67),
-  25px 24px rgb(197,69,66), 25px 25px rgb(197,69,66);
+  1px 0px rgb(208,95,88), 1px 1px rgb(208,95,88),
+  2px 1px rgb(207,94,87), 2px 2px rgb(207,94,87),
+  3px 2px rgb(206,93,86), 3px 3px rgb(206,93,86),
+  4px 3px rgb(205,92,85), 4px 4px rgb(205,92,85),
+  5px 4px rgb(204,91,84), 5px 5px rgb(204,91,84),
+  6px 5px rgb(203,90,83), 6px 6px rgb(203,90,83),
+  7px 6px rgb(202,89,82), 7px 7px rgb(202,89,82),
+  8px 7px rgb(201,88,81), 8px 8px rgb(201,88,81),
+  9px 8px rgb(200,87,80), 9px 9px rgb(200,87,80),
+  10px 9px rgb(199,86,79), 10px 10px rgb(199,86,79),
+  11px 10px rgb(198,85,78), 11px 11px rgb(198,85,78),
+  12px 11px rgb(197,84,77), 12px 12px rgb(197,84,77),
+  13px 12px rgb(196,83,76), 13px 13px rgb(196,83,76),
+  14px 13px rgb(195,82,75), 14px 14px rgb(195,82,75),
+  15px 14px rgb(194,81,74), 15px 15px rgb(194,81,74),
+  16px 15px rgb(193,80,73), 16px 16px rgb(193,80,73),
+  17px 16px rgb(192,79,72), 17px 17px rgb(192,79,72),
+  18px 17px rgb(191,78,71), 18px 18px rgb(191,78,71),
+  19px 18px rgb(190,77,70), 19px 19px rgb(190,77,70),
+  20px 19px rgb(189,76,69), 20px 20px rgb(189,76,69),
+  21px 20px rgb(188,75,68), 21px 21px rgb(188,75,68),
+  22px 21px rgb(187,74,67), 22px 22px rgb(187,74,67),
+  23px 22px rgb(186,73,66), 23px 23px rgb(186,73,66),
+  24px 23px rgb(185,72,65), 24px 24px rgb(185,72,65),
+  25px 24px rgb(184,71,64), 25px 25px rgb(184,71,64);
 }
 .phone1 .display1 {
   width: 188px;
   height: 333px;
   margin-top: 22px;
   background: url( assets/bg_phone_1.png);
-  border: 2px solid #c5c5c5;
+  border: 4px solid #c5c5c5;
 }
 .cam {
   width: 10px;
@@ -295,11 +309,12 @@ height: 27px;
   width: 458px;
   height: 215px;
   margin-left: 98px;
+  margin-top: 2px;
   border-radius: 25px;
   text-align: center;
   background-color: #f2f2f2;
   box-shadow:
-  1px 0px rgb(221,93,90), 1px 1px rgb(221,93,90),
+  1px 0px rgb(208, 95, 88), 1px 1px rgb(208, 95, 88),
   2px 1px rgb(220,92,89), 2px 2px rgb(220,92,89),
   3px 2px rgb(219,91,88), 3px 3px rgb(219,91,88),
   4px 3px rgb(218,90,87), 4px 4px rgb(218,90,87),
@@ -331,7 +346,7 @@ height: 27px;
 .phone2 .volum {
   width: 5px;
   height: 36px;
-  margin-left: 22px;
+  margin-left: 19px;
   margin-top: 1px;
 }
 .phone2 .display2 {
@@ -339,15 +354,20 @@ height: 27px;
   height: 188px;
   margin-left: 7px;
   background: url( assets/bg_phone_2.png);
-  border: 2px solid #c5c5c5;
+  border: 4px solid #c5c5c5;
 }
 .phone2 .home {
   margin-left: 8px;
+  margin-top: 0px;
 }
 .chevRight {
-  margin-left: 81px;
-  margin-top: 25px;
+  margin-left: 77px;
+  margin-top: 27px;
+  cursor: pointer;
+  background-color: #f06c64;
+  border: none;
 }
+
 
 
 /* Стили для .services */
@@ -360,53 +380,56 @@ height: 27px;
 }
 h1 {
   color: #666d89;
-  /* font-family: "Lato - Black"; */
   font-size: 30px;
-  font-weight: 700;
-  line-height: 17.86px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #666d89;
   margin: 0;
-  margin-left: 40px;
-  margin-top: 67px;
-  width: auto;
+  margin-left: 41px;
+  margin-top: 71px;
 }
 .text {
-  color: #767e9e;
   font-size: 18px;
-  font-weight: 300;
   line-height: 30px;
-  margin: 33px 0 51px 41px;
+  font-weight: 300;
+  color: #767e9e;
+  margin: 28px 0 45px 41px;
 }
 .blockIcons {
-  margin: 0 0 0 0;
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 2px;
 }
 .icons {
-  width: 313px;
-  height: 84px;
+  width: 299px;
+  height: auto;
 }
-/* .icons:nth-child(-n+3) {
-  margin-bottom: 37px;
-} */
+.icons:nth-child(-n+3) {
+  margin-bottom: 35px;
+}
 .iconsImg {
-  width: 59px;
-  height: 59px;
+  width: 55px;
+  height: 55px;
+  border: 2.0px solid #666d89;
   border-radius: 50%;
-  border: 2px solid #666d89;
+  flex-shrink: 0;
 }
 .iconsImg img {
   margin: auto;
 }
 .blockText {
-  width: 220px;
+  width: auto;
 }
 .blockText h2 {
-  color: #666d89;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 17.86px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-bottom: 0px;
   padding-left: 20px;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 900;
+  color: #666d89;
 }
 .blockText p {
   color: #767e9e;
@@ -415,6 +438,7 @@ h1 {
   line-height: 21.56px;
   margin: 0 auto;
   padding-left: 20px;
+  text-align: justify;
 }
 .services .line {
     background-color: #ffffff;
