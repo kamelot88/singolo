@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="singolo.css">
 </head>
 
 <body class=" main_flex">
-    <div id="wrapper">
-        <header class="main_flex_column flex__jcontent_between">
+
+    <header class="main_flex_column flex__jcontent_between" id="header">
+        <div id="wrapper">
             <div class="content main_flex flex__jcontent_between flex__align-content_center">
-                <div class="logo">SINGOLO<span class="red_text">*</span></div>
+                <h1 class="logo">SINGOLO<span class="red_text">*</span></h1>
                 <nav class="main_flex flex__jcontent_between">
-                    <li><a class="red_text">HOME</a></li>
+                    <li><a class="red_text" href="#header">HOME</a></li>
                     <li class="main_flex_column flex__jcontent_center">
                         <div class="block_style"></div>
                     </li>
-                    <li><a>SERVICES</a></li>
+                    <li><a href="#Our_Services">SERVICES</a></li>
                     <li class="main_flex_column flex__jcontent_center">
                         <div class="block_style"></div>
                     </li>
-                    <li><a>PORTFOLIO</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
                     <li class="main_flex_column flex__jcontent_center">
                         <div class="block_style"></div>
                     </li>
-                    <li><a>ABOUT</a></li>
+                    <li><a href="#">ABOUT</a></li>
                     <li class="main_flex_column flex__jcontent_center">
                         <div class="block_style"></div>
                     </li>
                     <li><a>CONTACT</a></li>
                 </nav>
             </div>
-            <div class="line"></div>
-        </header>
-        <main class="slide main_flex_column flex__jcontent_between">
+
+        </div>
+        <div class="line"></div>
+    </header>
+    <section class="slide main_flex_column flex__jcontent_between">
+        <div id="wrapper">
             <div class="content main_flex flex__align-items_center">
                 <button class="chevLeft main_flex_column flex__jcontent_center"><img src="assets/chev_left.png" alt="">
                 </button>
@@ -64,15 +69,16 @@
                 </button>
             </div>
             <div class="line"></div>
-        </main>
-        <div class="services main_flex_column flex__jcontent_between">
+        </div>
+    </section>
+    <section id="Our_Services" class="services main_flex_column flex__jcontent_between">
+        <div id="wrapper">
             <div class="content">
-                <h1>Our Services</h1>
-                <div class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum. Duis mollis, non commodo luctus, nisi erat porttitor<br> ligula,
+                <h2>Our Services</h2>
+                <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula,
                     eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh.
-                </div>
+                    tortor mauris condimentum nibh.</p>
                 <div class="blockIcons main_flex flex__jcontent_between flex__align-content_space-around">
 
                     <div class="icons main_flex__nowrap">
@@ -80,11 +86,11 @@
                             <img src="assets/pen.png" alt="">
                         </div>
                         <div class="blockText main_flex">
-                            <h2>Custom Design</h2>
-                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                                laoreet, viverra
-                                lacus
-                                ut, ultrices velit.</p>
+                            <h3>Custom Design</h2>
+                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                                    laoreet, viverra
+                                    lacus
+                                    ut, ultrices velit.</p>
                         </div>
                     </div>
 
@@ -93,9 +99,10 @@
                             <img src="assets/bulb.png" alt="">
                         </div>
                         <div class="blockText">
-                            <h2>Inovative Ideas</h2>
-                            <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus
-                                dolor id lorem.</p>
+                            <h3>Inovative Ideas</h2>
+                                <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
+                                    tellus
+                                    dolor id lorem.</p>
                         </div>
                     </div>
                     <div class="icons main_flex__nowrap">
@@ -103,9 +110,10 @@
                             <img src="assets/heart.png" alt="">
                         </div>
                         <div class="blockText">
-                            <h2>Love Is The Answer</h2>
-                            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
-                                Quisque condimentum.</p>
+                            <h3>Love Is The Answer</h2>
+                                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
+                                    felis.
+                                    Quisque condimentum.</p>
                         </div>
                     </div>
                     <div class="icons main_flex__nowrap">
@@ -113,9 +121,10 @@
                             <img src="assets/phone.png" alt="">
                         </div>
                         <div class="blockText">
-                            <h2>Responsive Layout</h2>
-                            <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent
-                                elit leo.</p>
+                            <h3>Responsive Layout</h2>
+                                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+                                    Praesent
+                                    elit leo.</p>
                         </div>
                     </div>
                     <div class="icons main_flex__nowrap">
@@ -123,9 +132,9 @@
                             <img src="assets/bubble.png" alt="">
                         </div>
                         <div class="blockText">
-                            <h2>24 / 7 Support</h2>
-                            <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
-                                Pellentesque egestas venenatis lorem .</p>
+                            <h3>24 / 7 Support</h2>
+                                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+                                    Pellentesque egestas venenatis lorem .</p>
                         </div>
                     </div>
                     <div class="icons main_flex__nowrap">
@@ -133,7 +142,7 @@
                             <img src="assets/star.png" alt="">
                         </div>
                         <div class="blockText">
-                            <h2>Feel Like A Star</h2>
+                            <h3>Feel Like A Star</h3>
                             <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
                                 tellus.</p>
                         </div>
@@ -141,9 +150,10 @@
 
                 </div>
             </div>
-            <div class="line"></div>
+
         </div>
-    </div>
+        <div class="line"></div>
+    </section>
 
 
 
