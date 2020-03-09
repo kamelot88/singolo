@@ -1,28 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="singolo3.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="singolo3.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <section id="GetQuote">
-        <div id="wrapper">
-
+      <div id="wrapper">
+        <div class="title">
+          <h2>Get a Quote</h2>
         </div>
-
-
+        <p class="text">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="container main_flex__nowrap">
+          <div class="form">
+            <form action="" method="post">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name (Required)"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email (Required)"
+                required
+              />
+              <input type="text" placeholder="Subject" />
+              <textarea
+                type="text"
+                placeholder="Describe your project in detail..."
+              ></textarea>
+              <button
+                type="submit"
+                class="main_flex flex__jcontent_center flex__align-items_center flex__align-content_center"
+              >
+                submit
+              </button>
+            </form>
+          </div>
+          <div class="contakt_info">
+            <h3>Contact Information</h3>
+            <p class="contakt_info_text">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+              Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
+              sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+              consequat felis.
+            </p>
+            <div class="contakt">
+              <div class="adress main_flex flex__align-items_center">
+                <img src="assets/location_538.png" alt="" />Elm St. 14/05 Lost
+                City
+              </div>
+              <div class="phone main_flex flex__align-items_center">
+                <img src="assets/phone_540.png" alt="" />
+                <a href="tel: 03528 331 86 35">03528 331 86 35</a>
+              </div>
+              <div class="email main_flex flex__align-items_center">
+                <img src="assets/mail_539.png" alt="" /><a
+                  href="mailto: info@singolo.com"
+                  >info@singolo.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line_GetQuote"></div>
     </section>
-
-
-
-
-
-</body>
-
+    <footer>
+      <div id="wrapper" class="h100 main_flex flex__jcontent_between">
+        <div
+          class="copirite main_flex flex__align-items_center flex__align-content_center"
+        >
+          © Copyright 2013
+        </div>
+        <div
+          class="icons_id main_flex flex__align-items_center flex__align-content_center"
+        >
+          <div class="icons main_flex">
+            <img src="assets/facebook_529.png" alt="" />
+          </div>
+          <div class=" icons main_flex">
+            <img src="assets/google__525.png" alt="" />
+          </div>
+          <div class="icons main_flex">
+            <img src="assets/twitter_521.png" alt="" />
+          </div>
+          <div class=" icons main_flex">
+            <img src="assets/linkedin_517.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
