@@ -596,7 +596,7 @@ nav li a:hover {
 .services .line {
   background-color: #ffffff;
 }
-.Portfolio > .wrapper {
+#Portfolio > .wrapper {
   padding-left: 40px;
   margin-bottom: 10px;
 }
@@ -606,7 +606,7 @@ nav li a:hover {
   height: 6px;
   background-color: #323746;
 }
-.Portfolio {
+#Portfolio {
   width: 100%;
   background-color: #2d303a;
   padding-top: 64px;
@@ -680,13 +680,13 @@ button:focus {
 }
 
 /* Стили About */
-.About {
+#About {
   width: 100%;
   padding-top: 72px;
   height: 734px;
   background-color: #f2f2f2;
 }
-.About h2 {
+#About h2 {
   margin: 0;
   margin-left: 40px;
   font-size: 30px;
@@ -695,7 +695,7 @@ button:focus {
   color: #666d89;
   letter-spacing: 0.01ex;
 }
-.About h3 {
+#About h3 {
   margin-left: 40px;
   margin-top: 25px;
   font-size: 18px;
