@@ -133,7 +133,6 @@
 /*Flex Framework_end*/
 
 /* Reset */
-@charset "utf-8";
 html,
 body,
 div,
@@ -273,11 +272,11 @@ body {
   font-family: "Lato", sans-serif;
   min-height: 100vh;
 }
-#wrapper {
+.wrapper {
   margin: 0 auto;
   width: 1020px;
 }
-#wrapper2 {
+.wrapper2 {
   margin: 0 auto;
   width: 1020px;
   padding-left: 40px;
@@ -309,6 +308,9 @@ header .content {
 nav {
   width: 371px;
   margin-top: 12px;
+}
+nav ul {
+  width: 100%;
 }
 nav li {
   /* height: auto; */
@@ -519,6 +521,9 @@ nav li a:hover {
 .services .content {
   width: 100%;
 }
+.none {
+  display: none;
+}
 .title_servis {
   color: #666d89;
   font-size: 28px;
@@ -591,7 +596,7 @@ nav li a:hover {
 .services .line {
   background-color: #ffffff;
 }
-.Portfolio > #wrapper {
+.Portfolio > .wrapper {
   padding-left: 40px;
   margin-bottom: 10px;
 }
