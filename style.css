@@ -651,7 +651,6 @@ nav li a:hover {
   line-height: 20px;
   font-weight: 400;
 }
-
 .btn_gallery .active {
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -678,7 +677,6 @@ button:focus {
   border: 1px solid #d31414;
   transform: scale(0.9);
 }
-
 /* Стили About */
 #About {
   width: 100%;
