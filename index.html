@@ -354,16 +354,26 @@
       </p>
       <div class="container main_flex__nowrap">
         <div class="form">
-          <form action="URL" method="post">
+          <form action="URL" method="post" class="message-form">
             <input type="text" name="name" placeholder="Name (Required)" required />
+
             <input type="email" name="email" placeholder="Email (Required)" required />
+
             <input type="text" placeholder="Subject" />
-            <textarea placeholder="Describe your project in detail..."></textarea>
+
+            <textarea placeholder="Describe your project in detail..." class="description-form"></textarea>
+
             <button type="submit"
               class="main_flex flex__jcontent_center flex__align-items_center flex__align-content_center">
               submit
             </button>
           </form>
+          <div class="message_form">
+            <p>Письмо отправлено</p>
+            <p class="topic"></p>
+            <p class="description"></p>
+            <p>ok</p>
+          </div>
         </div>
         <div class="contakt_info">
           <h3>Contact Information</h3>
@@ -412,7 +422,7 @@
       </div>
     </div>
   </footer>
-  <script src="1.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
