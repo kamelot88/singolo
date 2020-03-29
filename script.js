@@ -110,6 +110,7 @@ btn_port1.onclick = function () {
   btn_port4.classList.remove('btn_gallery_active');
   btn_port1.classList.add('btn_gallery_active');
   gallery.classList.remove('main_flex_rev');
+  gallery.classList.add('main_flex');
   document.querySelector('.b8').classList.remove('flex__order_01');
   document.querySelector('.b5').classList.remove('flex__order_02');
   document.querySelector('.b2').classList.remove('flex__order_03');
@@ -128,6 +129,7 @@ btn_port2.onclick = function () {
   btn_port1.classList.remove('btn_gallery_active');
   btn_port3.classList.remove('btn_gallery_active');
   btn_port4.classList.remove('btn_gallery_active');
+  gallery.classList.remove('main_flex');
   btn_port2.classList.add('btn_gallery_active');
   gallery.classList.add('main_flex_rev');
   document.querySelector('.b1').classList.remove('flex__order_06');
@@ -144,6 +146,7 @@ btn_port3.onclick = function () {
   btn_port4.classList.remove('btn_gallery_active');
   btn_port3.classList.add('btn_gallery_active');
   gallery.classList.remove('main_flex_rev');
+  gallery.classList.add('main_flex');
   document.querySelector('.b1').classList.remove('flex__order_06');
   document.querySelector('.b3').classList.remove('flex__order_05');
   document.querySelector('.b5').classList.remove('flex__order_04');
@@ -171,6 +174,7 @@ btn_port4.onclick = function () {
   document.querySelector('.b1').classList.remove('flex__order_05');
   document.querySelector('.b7').classList.remove('flex__order_06');
   gallery.classList.add('main_flex_rev');
+  gallery.classList.remove('main_flex');
   document.querySelector('.b1').classList.add('flex__order_06');
   document.querySelector('.b3').classList.add('flex__order_05');
   document.querySelector('.b5').classList.add('flex__order_04');
@@ -194,7 +198,7 @@ document.querySelector(".b1").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b1 > img").classList.add("block_images_border");
+  document.querySelector(".b1 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b2").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -208,7 +212,7 @@ document.querySelector(".b2").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b2 > img").classList.add("block_images_border");
+  document.querySelector(".b2 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b3").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -222,7 +226,7 @@ document.querySelector(".b3").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b3 > img").classList.add("block_images_border");
+  document.querySelector(".b3 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b4").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -236,7 +240,7 @@ document.querySelector(".b4").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b4 > img").classList.add("block_images_border");
+  document.querySelector(".b4 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b5").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -250,7 +254,7 @@ document.querySelector(".b5").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b5 > img").classList.add("block_images_border");
+  document.querySelector(".b5 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b6").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -264,7 +268,7 @@ document.querySelector(".b6").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b6 > img").classList.add("block_images_border");
+  document.querySelector(".b6 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b7").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -278,7 +282,7 @@ document.querySelector(".b7").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b7 > img").classList.add("block_images_border");
+  document.querySelector(".b7 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b8").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -292,7 +296,7 @@ document.querySelector(".b8").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b8 > img").classList.add("block_images_border");
+  document.querySelector(".b8 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b9").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -306,7 +310,7 @@ document.querySelector(".b9").onclick = function () {
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b9 > img").classList.add("block_images_border");
+  document.querySelector(".b9 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b10").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -320,7 +324,7 @@ document.querySelector(".b10").onclick = function () {
   document.querySelector(".b9 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b10 > img").classList.add("block_images_border");
+  document.querySelector(".b10 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b11").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -334,7 +338,7 @@ document.querySelector(".b11").onclick = function () {
   document.querySelector(".b9 > img").classList.remove("block_images_border");
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b12 > img").classList.remove("block_images_border");
-  document.querySelector(".b11 > img").classList.add("block_images_border");
+  document.querySelector(".b11 > img").classList.toggle("block_images_border");
 }
 document.querySelector(".b12").onclick = function () {
   document.querySelector(".b1 > img").classList.remove("block_images_border");
@@ -348,7 +352,7 @@ document.querySelector(".b12").onclick = function () {
   document.querySelector(".b9 > img").classList.remove("block_images_border");
   document.querySelector(".b10 > img").classList.remove("block_images_border");
   document.querySelector(".b11 > img").classList.remove("block_images_border");
-  document.querySelector(".b12 > img").classList.add("block_images_border");
+  document.querySelector(".b12 > img").classList.toggle("block_images_border");
 }
 // Картинки в portfolio_конец
 
@@ -363,9 +367,12 @@ var topic = document.querySelector("#GetQuote > div.wrapper2 > div.container.mai
 var inputTopic = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > form > input[type=text]:nth-child(3)");
 var inputDescription = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > form > textarea");
 var description = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > div > p.description");
+var bodyBg = document.createElement('div');
+form.appendChild(bodyBg);
 
 form.onsubmit = function () {
   messageForm.style.display = "block";
+  bodyBg.classList.add('body-bg');
   if (inputTopic.value === "") {
     topic.textContent = "Без темы";
   } else {
@@ -383,4 +390,39 @@ form.onsubmit = function () {
   return false;
 };
 
+var closedB = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > div > div > img");
 
+closedB.addEventListener('click', function () {
+  messageForm.style.display = "none";
+  bodyBg.classList.remove('body-bg');
+});
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    messageForm.style.display = "none";
+    bodyBg.classList.remove('body-bg');
+  }
+});
+
+
+
+
+
+// var numbF = function (num) {
+//   num = String(num);
+//   var result = 'Обычный';
+//   if (Number(num[num.length - 1]) + Number(num[num.length - 2]) + Number(num[num.length - 3]) === Number(num[num.length - 4]) + Number(num[num.length - 5]) + Number(num[num.length - 6])) {
+//     result = 'Счастливый';
+//   }
+//   return result;
+// };
+
+var hamburger = document.querySelector("body > header > div > div > div");
+var nav = document.querySelector("body > header > div > div > nav");
+hamburger.addEventListener('click', function () {
+  if (nav.style.display === 'block') {
+    nav.style.display = 'none';
+  } else {
+    nav.style.display = 'block';
+  }
+});
