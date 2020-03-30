@@ -1331,8 +1331,121 @@ body > footer > div > div.icons_id {
     font-size: 20px;
   }
   #slide {
+    height: auto;
     margin-top: 71px;
   }
+  .slide_wrap {
+    width: 375px;
+    height: auto;
+  }
+  .slide {
+    width: 375px;
+    padding-bottom: 30.28px;
+    padding-top: 20.01px;
+    height: auto;
+  }
+  .ekran {
+    height: 100%;
+  }
+  .slide2 {
+    display: none;
+  }
+    .chevLeft {
+    margin-top: 98.45px;
+    margin-left: 10.25px;
+  }
+  .chevRight {
+    margin-top: 98.45px;
+    margin-left: 337.69px;
+  }
+  .phone1 {
+    width: 79.28px; 
+    height: 168.1px;
+    margin-left: 40.92px;
+    border-radius: 12.5px;
+    box-shadow: 1px 0px rgb(208, 95, 88), 1px 1px rgb(208, 95, 88), 2px 1px rgb(220, 92, 89), 2px 2px rgb(220, 92, 89), 3px 2px rgb(219, 91, 88), 3px 3px rgb(219, 91, 88), 4px 3px rgb(218, 90, 87), 4px 4px rgb(218, 90, 87), 5px 4px rgb(217, 89, 86), 5px 5px rgb(217, 89, 86), 6px 5px rgb(216, 88, 85), 6px 6px rgb(216, 88, 85), 7px 6px rgb(215, 87, 84), 7px 7px rgb(215, 87, 84), 8px 7px rgb(214, 86, 83), 8px 8px rgb(214, 86, 83), 9px 8px rgb(213, 85, 82), 9px 9px rgb(213, 85, 82), 10px 9px rgb(212, 84, 81), 10px 10px rgb(212, 84, 81), 11px 10px rgb(211, 83, 80), 11px 11px rgb(211, 83, 80), 12px 11px rgb(210, 82, 79), 12px 12px rgb(210, 82, 79);
+  }
+  .phone1 .display1 {
+    width: 69.12px;
+    height: 122.43px;
+    margin-top: 8.89px;
+  }
+  .cam {
+    width: 3.26px;
+    height: 3.26px;
+    margin-top: 6.05px;
+  }
+  .cam .infra {
+    width: 1.44px;
+    height: 1.44px;
+  }
+  .volum {
+    width: 13.21px;
+    height: 1.83px;
+    margin-top: 3.9px;
+  }
+  .home {
+    width: 15.37px;
+    height: 15.37px;
+    margin-top: 2.47px;
+  }
+  .home img {
+    margin: auto;
+  }
+  .phone2 {
+    width: 168.1px;
+    height: 79.28px;
+    margin-left: 35.78px;
+    border-radius: 12.5px;
+    box-shadow: 1px 0px rgb(208, 95, 88), 1px 1px rgb(208, 95, 88), 2px 1px rgb(220, 92, 89), 2px 2px rgb(220, 92, 89), 3px 2px rgb(219, 91, 88), 3px 3px rgb(219, 91, 88), 4px 3px rgb(218, 90, 87), 4px 4px rgb(218, 90, 87), 5px 4px rgb(217, 89, 86), 5px 5px rgb(217, 89, 86), 6px 5px rgb(216, 88, 85), 6px 6px rgb(216, 88, 85), 7px 6px rgb(215, 87, 84), 7px 7px rgb(215, 87, 84), 8px 7px rgb(214, 86, 83), 8px 8px rgb(214, 86, 83), 9px 8px rgb(213, 85, 82), 9px 9px rgb(213, 85, 82), 10px 9px rgb(212, 84, 81), 10px 10px rgb(212, 84, 81), 11px 10px rgb(211, 83, 80), 11px 11px rgb(211, 83, 80), 12px 11px rgb(210, 82, 79), 12px 12px rgb(210, 82, 79);
+  }
+  .phone2 >.volum {
+    margin-left: 7.72px;
+  }
+  .phone2 > .home {
+    margin-left: 3.07px;
+  } 
+  .phone2 .volum {
+    width: 1.83px;
+    height: 13.21px;
+  }
+  .phone2 .display2 {
+    width: 122.43px;
+    height: 69.12px;
+    margin-left: 3.88px;
+  }
+  .slide2 > .small_phone {
+    height: 225px;
+    width: 115px;
+    border-radius: 20px;
+  }
+  .slide2 > .small_phone .cam {
+    height: 5.8px;
+    width: 5.8px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide2 > .small_phone .cam .infra {
+    height: 2.6px;
+    width: 2.6px;
+  }
+  .slide2 > .small_phone .volum {
+    height: 3px;
+    width: 22px;
+  }
+  .slide2 > .small_phone .display1 {
+    height: 150.5px;
+    width: 96px;
+    margin: 0;
+  }
+  .slide2 > .small_phone .home {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+  }
+
   #Our_Services > div > div > h2 {
     margin-left: 32px;
   }
@@ -1372,6 +1485,9 @@ body > footer > div > div.icons_id {
   padding-top: 33px;
   height: auto;
 }
+#About > div {
+  height: auto;
+}
 #About h2 {
   margin-left: 30px;
 }
@@ -1379,27 +1495,62 @@ body > footer > div > div.icons_id {
   margin-left: 30px;
   margin-right: 30px;
 }
-.block_id {
-  width: auto;
-  margin-right: 0;
+#About > div > div {
+  flex-wrap: wrap;
+  height: auto;
+  margin-left: 31px;
+  padding-left: 0;
 }
-.photo_id {
+#About > div > div > div {
+  margin-left: 0;
+  margin-right: 0;
   width: auto;
   height: auto;
-  margin-bottom: 18px;
 }
-.photo_id > img {
+#About > div > div > div > div > img {
   width: 314px;
   height: 314px;
+}
+#About > div > div > div > div.photo_id {
+  width: auto;
+  height: auto;
+  max-width: 314px;
+  max-height: 314px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
 }
 .text_id {
   margin-bottom: 15px;
 }
-#About > div > div {
-  flex-flow: row wrap;
-}
 .icons_id {
   margin-bottom: 34px;
 }
+#About > div > div > div:nth-child(3) > div.icons_id.main_flex {
+  margin-bottom: 45px;
+}
+.container form {
+  width: 315px;
+  margin-bottom: 32px;
+}
+.container form button {
+  width: 315px;
+}
+#GetQuote .container {
+  flex-wrap: wrap;
+}
+#GetQuote .wrapper2 {
+  margin-left: 30px;
+  width: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.copirite {
+  display: none;
+}
+footer .icons_id {
+  margin: 0 auto;
+}
+
+
 
 }
