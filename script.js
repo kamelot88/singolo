@@ -404,10 +404,6 @@ document.addEventListener('keydown', function (evt) {
   }
 });
 
-
-
-
-
 // var numbF = function (num) {
 //   num = String(num);
 //   var result = 'Обычный';
@@ -419,10 +415,16 @@ document.addEventListener('keydown', function (evt) {
 
 var hamburger = document.querySelector("body > header > div > div > div");
 var nav = document.querySelector("body > header > div > div > nav");
+var logo = document.querySelector("body > header > div > div > h1");
+
 hamburger.addEventListener('click', function () {
   if (nav.style.display === 'block') {
     nav.style.display = 'none';
+    hamburger.classList.remove('rotation');
+    logo.style.marginLeft = 'calc(50% - 70px)';
   } else {
     nav.style.display = 'block';
+    hamburger.classList.add('rotation');
+    logo.style.marginLeft = '30px';
   }
 });
