@@ -5,9 +5,9 @@ var portfolio = document.querySelector("body > header > div > div > nav > ul > l
 var about = document.querySelector("body > header > div > div > nav > ul > li:nth-child(7) > a");
 var contakt = document.querySelector("body > header > div > div > nav > ul > li:nth-child(9) > a");
 
+var scrollTop = window.pageYOffset;
 window.onscroll = function () {
   var scrollTop = window.pageYOffset;
-
   if (scrollTop >= 0 && scrollTop < 600) {
     services.classList.remove('red_text');
     portfolio.classList.remove('red_text');
@@ -44,7 +44,94 @@ window.onscroll = function () {
     contakt.classList.add('red_text');
   }
 };
+
+if (document.documentElement.clientWidth <= 767 && document.documentElement.clientWidth >= 375) {
+  home.addEventListener('click', function () {
+    nav.style.display = 'none';
+    hamburger.classList.remove('rotation');
+    logo.style.marginLeft = 'calc(50% - 70px)';
+  });
+  services.addEventListener('click', function () {
+    nav.style.display = 'none';
+    hamburger.classList.remove('rotation');
+    logo.style.marginLeft = 'calc(50% - 70px)';
+  });
+  portfolio.addEventListener('click', function () {
+    nav.style.display = 'none';
+    hamburger.classList.remove('rotation');
+    logo.style.marginLeft = 'calc(50% - 70px)';
+  });
+  about.addEventListener('click', function () {
+    nav.style.display = 'none';
+    hamburger.classList.remove('rotation');
+    logo.style.marginLeft = 'calc(50% - 70px)';
+  });
+  contakt.addEventListener('click', function () {
+    nav.style.display = 'none';
+    hamburger.classList.remove('rotation');
+    logo.style.marginLeft = 'calc(50% - 70px)';
+  });
+  window.onscroll = function () {
+    var scrollTop = window.pageYOffset;
+    if (scrollTop >= 0 && scrollTop < 294) {
+      services.classList.remove('red_text');
+      portfolio.classList.remove('red_text');
+      about.classList.remove('red_text');
+      contakt.classList.remove('red_text');
+      home.classList.add('red_text');
+    }
+    if (scrollTop >= 295 && scrollTop < 890) {
+      home.classList.remove('red_text');
+      portfolio.classList.remove('red_text');
+      about.classList.remove('red_text');
+      contakt.classList.remove('red_text');
+      services.classList.add('red_text');
+    }
+    if (scrollTop >= 891 && scrollTop < 1538) {
+      home.classList.remove('red_text');
+      services.classList.remove('red_text');
+      about.classList.remove('red_text');
+      contakt.classList.remove('red_text');
+      portfolio.classList.add('red_text');
+    }
+    if (scrollTop >= 1538 && scrollTop < 3147) {
+      home.classList.remove('red_text');
+      services.classList.remove('red_text');
+      portfolio.classList.remove('red_text');
+      contakt.classList.remove('red_text');
+      about.classList.add('red_text');
+    }
+    if (scrollTop >= 3147) {
+      home.classList.remove('red_text');
+      services.classList.remove('red_text');
+      portfolio.classList.remove('red_text');
+      about.classList.remove('red_text');
+      contakt.classList.add('red_text');
+    }
+  }
+}
+
+
+
+
+
+
+
 // Якоря_конец
+
+
+
+
+
+
+
+
+
+
+
+// @media(min - width: 320px) and(max - width: 374px) {
+
+
 
 /* Слайдер_начало */
 var buttonL = document.querySelector('.chevLeft');
@@ -428,3 +515,5 @@ hamburger.addEventListener('click', function () {
     logo.style.marginLeft = '30px';
   }
 });
+
+
