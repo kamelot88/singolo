@@ -44,33 +44,33 @@ window.onscroll = function () {
     contakt.classList.add('red_text');
   }
 };
-
+home.addEventListener('click', function () {
+  nav.style.display = 'none';
+  hamburger.classList.remove('rotation');
+  logo.style.marginLeft = 'calc(50% - 70px)';
+});
+services.addEventListener('click', function () {
+  nav.style.display = 'none';
+  hamburger.classList.remove('rotation');
+  logo.style.marginLeft = 'calc(50% - 70px)';
+});
+portfolio.addEventListener('click', function () {
+  nav.style.display = 'none';
+  hamburger.classList.remove('rotation');
+  logo.style.marginLeft = 'calc(50% - 70px)';
+});
+about.addEventListener('click', function () {
+  nav.style.display = 'none';
+  hamburger.classList.remove('rotation');
+  logo.style.marginLeft = 'calc(50% - 70px)';
+});
+contakt.addEventListener('click', function () {
+  nav.style.display = 'none';
+  hamburger.classList.remove('rotation');
+  logo.style.marginLeft = 'calc(50% - 70px)';
+});
 if (document.documentElement.clientWidth <= 767 && document.documentElement.clientWidth >= 375) {
-  home.addEventListener('click', function () {
-    nav.style.display = 'none';
-    hamburger.classList.remove('rotation');
-    logo.style.marginLeft = 'calc(50% - 70px)';
-  });
-  services.addEventListener('click', function () {
-    nav.style.display = 'none';
-    hamburger.classList.remove('rotation');
-    logo.style.marginLeft = 'calc(50% - 70px)';
-  });
-  portfolio.addEventListener('click', function () {
-    nav.style.display = 'none';
-    hamburger.classList.remove('rotation');
-    logo.style.marginLeft = 'calc(50% - 70px)';
-  });
-  about.addEventListener('click', function () {
-    nav.style.display = 'none';
-    hamburger.classList.remove('rotation');
-    logo.style.marginLeft = 'calc(50% - 70px)';
-  });
-  contakt.addEventListener('click', function () {
-    nav.style.display = 'none';
-    hamburger.classList.remove('rotation');
-    logo.style.marginLeft = 'calc(50% - 70px)';
-  });
+
   window.onscroll = function () {
     var scrollTop = window.pageYOffset;
     if (scrollTop >= 0 && scrollTop < 294) {
