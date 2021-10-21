@@ -134,29 +134,69 @@ if (document.documentElement.clientWidth <= 767 && document.documentElement.clie
 
 
 /* Слайдер_начало */
-var buttonL = document.querySelector('.chevLeft');
-var buttonR = document.querySelector('.chevRight');
-var left = 0;
-var slide1 = document.querySelector('.slide1');
-var clonSlide1 = slide1.cloneNode(true);
-var ekran = document.querySelector('.ekran');
+const buttonL = document.querySelector('.chevLeft');
+const buttonR = document.querySelector('.chevRight');
 
-buttonL.onclick = function () {
-  left = left - 1020;
-  if (left < -1020) {
-    left = 0;
+
+const colectionSlid = document.querySelectorAll("#home > div > div > .slide"); // получаю коллекцию элементов слайдера
+const slide = document.querySelector("#home > div > div > .slide");
+const sliderLine = document.querySelector('.ekran');
+
+let count = 0;
+
+let width;
+
+function init() {
+  // console.log('risize');
+  width = document.querySelector('.slide_wrap').offsetWidth;
+  sliderLine.style.width = width * colectionSlid.length + 'px';
+  colectionSlid.forEach( item => {
+    item.style.width = width + "px";
+    item.style.height = "auto";
+  });
+  rollSlider();
+}
+window.addEventListener('resize', init);
+init();
+
+buttonL.addEventListener('click', function() {
+  count--;
+  if (count < 0) {
+    count = colectionSlid.length - 1;
   }
-  ekran.style.left = left + 'px';
+  rollSlider();
+});
+
+
+buttonR.addEventListener('click', function() {
+  count++;
+  if (count >= colectionSlid.length) {
+    count = 0;
+  }
+  rollSlider();
+});
+
+function rollSlider() {
+  sliderLine.style.transform = 'translate(-'+count*width+'px)';
 }
 
-buttonR.onclick = function () {
-  var ekran = document.querySelector('.ekran');
-  left = - 1020;
-  if (left > -1020) {
-    left = 0;
-  }
-  ekran.style.left = left + 'px'
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Слайдер_конец */
 
 // Отключение дисплеев_начало
@@ -448,7 +488,7 @@ var form = document.querySelector("#GetQuote > div.wrapper2 > div.container.main
 
 
 var nameF = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > form > input[type=text]:nth-child(1)");
-var email = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > form > input[type=email]:nth-child(2)")
+var email = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > form > input[type=email]:nth-child(2)");
 var messageForm = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > div")
 var topic = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > div > p.topic");
 var inputTopic = document.querySelector("#GetQuote > div.wrapper2 > div.container.main_flex__nowrap > div.form > form > input[type=text]:nth-child(3)");

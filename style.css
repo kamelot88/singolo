@@ -412,17 +412,13 @@ nav li a {
   margin-top: 95px;
 }
 .slide_wrap {
-  width: 1020px;
+  /* width: 1020px; */
   height: 600px;
-  
+  max-width: 100vw;
   overflow: hidden;
-  
 }
 .ekran {
-  width: 2040px;
-  position: relative;
-  left: 0;
-  right: 0;
+  display: flex;
   transition: all ease 1s;
 }
 .ekran::after {
@@ -432,10 +428,8 @@ nav li a {
 }
 .slide {
   height: 100%;
-  width: 1020px;
   padding-bottom: 84px;
   padding-top: 52px;
-  float: left;
 }
 .slide2 {
   background: #648bf0;
@@ -505,7 +499,7 @@ nav li a {
 .phone1 {
   width: 215px;
   height: 458px;
-  margin-left: 112px;
+  /* margin-left: 112px; */
   /* margin-top: 5px; */
   border-radius: 25px;
   background-color: #f2f2f2;
@@ -1369,7 +1363,6 @@ body > footer > div > div.icons_id {
     height: auto;
   }
   .slide {
-    width: auto;
     padding-bottom: 30.28px;
     padding-top: 20.01px;
     height: auto;
@@ -1378,10 +1371,9 @@ body > footer > div > div.icons_id {
     height: 100%;
     width: auto;
     display: flex;
-    justify-content: center;
   }
   .slide2 {
-    display: none;
+    /* display: none; */
   }
     .chevLeft {
     margin-top: 98.45px;
@@ -1691,14 +1683,12 @@ footer .icons_id {
     height: auto;
   }
   .slide {
-    width: auto;
     padding-bottom: 30.28px;
     padding-top: 20.01px;
     height: auto;
   }
   .ekran {
     height: 100%;
-    width: auto;
     display: flex;
     justify-content: center;
   }
